@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>My Cheatsheet</title>
+<!--Style Sheet -->
+ <link href="styles.css" rel="stylesheet">
+ <!--Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <h1>My Cheat Sheet</h1> 
+  <div class='borders'>
+    <h2>Types of Borders</h2>
+      <p class='borders' id='dotted'>Dotted</p>
+      <p class='borders' id='dashed'>Dashed</p>
+      <p class='borders' id='solid'>Solid</p>
+      <p class='borders' id='groove'>Groove</p>
+      <p class='borders' id='inset'>Inset</p>
+      <p class='borders' id='none'>None</p>
+      <p class='borders' id='hidden'>Hidden</p>
+  </div>
+  <div class='display' id='display'>
+    <h2>Positioning</h2>
+      <p class='display'>Allows you to specify the position of an element using command line 
+        <ul class='display'>
+         <li class='display' id='static'>position: static;</li>
+           <ul class='display'>
+             <li class='display bubbles'>HTML elements are positioned static by default. Static positioned elements are not affected by the top, bottom left, and right properties.</li>
+           </ul>
+        <li class='display' id='relative'>position: relative;</li>
+          <ul class='display'>
+            <li class='display bubbles'> Positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. </li>
+          </ul>
+      <li class='display' id='fixed'>position: fixed;</li>
+        <ul class='display'>
+         <li class='display bubbles'>Positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</li>
+       </ul>
+    <li class='display' id='absolute'>position: absolute;</li>
+      <ul class='display'>
+        <li class='display bubbles'> Positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). </li>
+     </ul>
+    <li class='display' id='sticky'>position: sticky;</li>
+       <ul class='display'>
+        <li class='display bubbles'> Positioned based on the user's scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). </li>
+        </ul>
+      </ul>
+    </p>
+  </div>
+  <div class='box-model'>
+  <h2 class='box-model'>Box Model</h2>
+  <img src="https://www.helicalinsight.com/wp-content/uploads/2019/07/box-model.jpg">
+  <table class='box-model'>
+    <thead class='box-model'>
+      <tr class='box-model'> 
+      <th class='box-model' id='margin'> Margin </th>
+      <th class='box-model' id='border'> Border </th>
+      <th class='box-model' id='padding'> Padding </th>
+      <th class='box-model' id='content'> Content </th>
+      </tr>
+    </thead>
+    <tbody class='box-model'>
+      <tr class='box-model'>
+        <td class='box-model'> The area surrounding the border. This is how the item can be moved around on the page using 'margin: 0 auto;' </td>
+        <td class='box-model'> The area surrounding the padding. This is how the item can we 'boxed' in and secluded from other information. The command line that can be used is 'border: 1px solid black;' </td>
+        <td class='box-model'> This is the area directly around the content. It can moved closer or further from the content using 'padding: 30px;'</td>
+        <td class='box-model'>The content.. it's literally just what's being shown. Can be altered using a multitude of CSS commands. </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>
